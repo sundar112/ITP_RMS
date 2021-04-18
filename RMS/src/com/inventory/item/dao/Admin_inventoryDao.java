@@ -11,27 +11,23 @@ import com.inventory.item.model.Item;
 
 public class Admin_inventoryDao {
 	
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet rs = null;
+	
+	
 	public static List <Item> validate(int ItemId, String ItemName){
 		
 		ArrayList<Item> item = new ArrayList<>();
 		
-		//create database connection
-		String url = "jdbc:mysql://localhost:3306/rmsdb";
-		String user = "root";
-		String pass = "root";
-		
 		
 		//validate
 		
-		try {
-			
-			Class.forName("com.mysql.jdbc.Driver");
-			
-			Connection con = DriverManager.getConnection(url, user, pass);
-			Statement stmt = con.createStatement();
+		try {		
+			con = DbConnect.getConnection();
+			stmt=con.createStatement();
 			String sql = "select * from Item where ItemId='"+ItemId+"' or ItemName '"+ItemName+"'";
-			ResultSet rs = stmt.executeQuery(sql);
-			
+			rs = stmt.executeQuery(sql);			
 			if(rs.next()) {
 				int id = rs.getInt(1);
 				String name = rs.getString(2);

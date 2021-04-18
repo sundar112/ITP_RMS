@@ -1,0 +1,82 @@
+
+/* admin navigation from hear*/
+body{
+	font-family: sans-serif;
+}
+.wrapper{
+	width: 1100px;
+	margin: 0 auto;
+}
+.banner{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+
+}
+.side-navbar{
+	height: 100%;
+	width: 230px;
+	position: fixed;
+	left: 0;
+	background-color:#042331;
+	overflow-x: hidden;
+}
+
+.side-navbar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;	
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+}
+.side-navbar a:hover{
+	padding-left: 25px;
+}
+
+.content-area{
+	margin-left: 230px;
+	padding: 0 18px;
+}
+html{
+	scroll-behavior: smooth;
+}
+table{
+	width: 600px;
+	box-shaddow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+	text-align:center;
+	padding-top: 20%;
+	overflow-x: hidden;
+	margin-left: 200px;
+	margin-top:200px;
+}
+table, th, td{
+	padding: 20px;
+	border: 2px solid lightgray;
+	border-collapse: collapse;
+}
+td{
+	font-size: 18px;
+}
+th{
+	background-color: blue;
+	color: white;
+}
+tr:nth-child(odd){
+	background-color: lightblue;
+}
+tr:nth-child(even){
+	background-color: lightgreen;
+}
+
+
+
+
+
+
+

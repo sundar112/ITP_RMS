@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Inventory Dash Board</title>
+	<title>Removed Item</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
 	<div class="side-navbar">
 		
 		<ul>
-			<a herf="#">Item Details</a>
+			<a herf="AInventoryDashBord.jsp">Item Details</a>
 			<a herf="addItem.jsp">Add/Edit Item</a>
 			<a herf="update.jsp">Update Item</a>
 			<a herf="delete.jsp">Delete Item</a>
-			<a herf="removed.jsp">Removed Item</a>	
+			<a herf="#">Removed Item</a>	
 		</ul>	
 	</div>
 	
